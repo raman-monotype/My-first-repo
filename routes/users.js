@@ -4,13 +4,18 @@ const router = express.Router();
 
 const users = [
     {
-        firstname: "john",
-        lastname : "Doe",
+        firstname: "sumit",
+        lastname : "randey",
         age: 25
     },
     {
-        firstName: "jane",
-        lastName: 'Doe',
+        firstName: "rishabh",
+        lastName: 'raj',
+        age: 24
+    },
+    {
+        firstName: "raman",
+        lastName: 'singh',
         age: 24
     }
 ]
