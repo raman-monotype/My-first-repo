@@ -14,17 +14,21 @@ const users = [
         age: 24
     }
 ]
-
-router.get('/', (req,res) => {
+router.get('/', (req, res) => {
     console.log(users);
 
     res.send(users);
 });
+/*router.get('/', (req,res) => {
+    console.log(users);
+
+    res.send(users);
+});*/
 
 router.post('/',(req, res) => {
     const user = req.body;
 
-    users.push({...user, id: uuidv4() });
+    const userId = uuidv4();
 
     res.send(`User with the name ${user.firstName} added to the database!`);
 });
